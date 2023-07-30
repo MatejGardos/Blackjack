@@ -40,7 +40,8 @@ class Game:
         for card in card_group:
             total += card.value
 
-            # check if Ace can be 11
+        # check if Ace can be 11
+        for card in card_group:
             if card.card == "A":
                 if total + 10 <= 21:
                     total += 10
